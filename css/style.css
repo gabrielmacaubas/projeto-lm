@@ -61,7 +61,7 @@ p {
     background: radial-gradient(#ffffff, #d6ffd7);
 }
 
-.area{
+.fileira{
     display: flex;
     align-items: center;
 }

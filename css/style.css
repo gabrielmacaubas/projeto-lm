@@ -128,9 +128,14 @@ ul {
 .avaliacoes {
     padding-top: 50px;
 }
+
 .fa-star {
     padding: 25px 0px 25px 0px;
     color: #ff3b3b;
+}
+
+.fa-heart {
+    color: #d6ffd7;
 }
 
 .footer h3 {
@@ -141,7 +146,7 @@ ul {
 .footer {
     background: #000;
     color: #8a8a8a;
-    font-size: 12px;
+    font-size: 13px;
     padding: 60px 0 20px;
 }
 
@@ -164,7 +169,6 @@ ul {
 
 .footer p, .footer a {
     color: #8a8a8a;
-    width: 350px;
 }
 
 .fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
@@ -181,4 +185,11 @@ ul {
 
 .fcoluna-3, .fcoluna-4 {
     text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
 }

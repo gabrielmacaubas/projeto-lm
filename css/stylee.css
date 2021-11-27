@@ -1,5 +1,3 @@
-/* PÁGINA INICIAL */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,13 +23,13 @@ nav ul li {
     margin: 20px;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 a {
     text-decoration: none;
     color: #555;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -140,7 +138,6 @@ ul {
     color: #d6ffd7;
 }
 
-
 .footer {
     background: #000;
     color: #8a8a8a;
@@ -196,83 +193,155 @@ ul {
     margin-left: 20px;
 }
 
-.footer hr {
+.hr-fim {
     border: none;
     background: #b5b5b5;
     height: 1px;
-    margin: 20px 0;
+    margin: 20px 0px;
 }
 .copyright {
+    margin-top: 20px;
     text-align: center;
 }
 
-/* PÁGINA DE LOGIN */
-
-form input {
-    font-size: 16px;
-    width: 100%;
-    height: 45px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-}
-
-form .btn {
-    font-size: 20px;
-    cursor: pointer;
-    width: 100%;
-    height: 45px;
-    border: none;
-    margin: 10px 0;
-}
-
-
-form a {
-    font-size: 14px;
-}
-
-.container-form {
-    background: #fff;
-    width: 400px;
-    height: 600px;
-    position: relative;
+.quemsomos {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+.quemsomos p {
     padding: 20px;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
-    font-size: 20px;
 }
 
-.pagina-login {
-    padding: 100px 0;
-}
-
-.titulo-formulario {
-    font-weight: bold;
-    color: #555;
-    width: 135px;
-    display: inline-block;
-}
-
-#linha {
-    width: 135px;
+.hr-pagina {
     border: none;
-    background: #ff3b3b;
-    height: 3px;
-    align-items: center;
-    margin: auto;
+    background-color: #ff3b3b;
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
 }
 
-#cadastrar, #entrar {
-    left: 0px;
+.propositos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 60px;
 }
 
-.container-form form {
-    position: absolute;
-    top: 200px;
-    padding: 0 30px;
-}
-
-.formulario {
+.propositos li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 40x 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+    background-color: white;
+}
+
+.propositos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.propositos p {
+    font-size: 15px;
+}
+
+.propositos li:hover {
+    box-shadow: 0 10px 20px;
+    color:rgb(197, 230, 211)
+}
+
+.mapas {
+    display: inline-block;
+    text-align: center;
+    width: 680px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.mapas h1 {
+    font-size: 30px;
+}
+
+.duvidas {
+    display: inline-block;
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.duvidas h1 {
+    font-size: 30px;
+}
+
+@media all and (min-width: 1440px) {
+    .quemsomos {
+        width: 100%;
+        margin: auto;
+    }
+    .propositos {
+        width: 100%;
+        margin: auto;
+    }
+    .mapas {
+        width: 100%;
+        margin: auto;
+    }
+    .duvidas {
+        width: 100%;
+        margin: auto;
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        }
+    .fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
+        width: 100%;   
+        flex-basis: 12%;
+        min-width: 250px;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .quemsomos {
+        width: 100%;
+        margin: auto;
+    }
+    .propositos {
+        width: 100%;
+        margin: auto;
+    }
+    .mapas {
+        width: 100%;
+        margin: auto;
+    }
+    .duvidas {
+        width: 100%;
+        margin: auto;
+    }
+    .footer {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    .fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
+        width: 100%;   
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
 }

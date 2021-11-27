@@ -1,3 +1,5 @@
+/* PÁGINA INICIAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,13 +25,13 @@ nav ul li {
     margin: 20px;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-}
-
 a {
     text-decoration: none;
     color: #555;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -192,4 +194,78 @@ ul {
     width: 100%;
     font-weight: bold;
     font-size: 16px;
+}
+
+
+/* PÁGINA DE LOGIN */
+
+form input {
+    font-size: 16px;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin: 10px 0;
+}
+
+
+form a {
+    font-size: 14px;
+}
+
+.container-form {
+    background: #fff;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 10%);
+    font-size: 20px;
+}
+
+.pagina-login {
+    padding: 100px 0;
+}
+
+.titulo-formulario {
+    font-weight: bold;
+    color: #555;
+    width: 135px;
+    display: inline-block;
+}
+
+#linha {
+    width: 135px;
+    border: none;
+    background: #ff3b3b;
+    height: 3px;
+    align-items: center;
+    margin: auto;
+}
+
+#cadastrar, #entrar {
+    left: 0px;
+}
+
+.container-form form {
+    position: absolute;
+    top: 200px;
+    padding: 0 30px;
+}
+
+
+
+.formulario {
+    display: inline-block;
 }

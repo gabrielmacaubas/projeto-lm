@@ -40,11 +40,6 @@ ul {
     list-style-type: none;
 }
 
-
-.mapas, .duvidas {
-    display: flex;
-}
-
 .container {
     max-width: 1300px;
     margin: auto;
@@ -143,19 +138,116 @@ ul {
     color: #d6ffd7;
 }
 
-
-.quemsomos {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding: 30px;
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.quemsomos p {
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 13px;
+    padding: 60px 0 20px;
+}
+
+.fcoluna-1 {
+    flex-basis: 30%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.fcoluna-2 img {
+    width: 125px;
+    margin-bottom: 30px;
+    filter: invert(100%);
+}
+
+.fcoluna-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer p, .footer a {
+    color: #8a8a8a;
+}
+
+.fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+
+.fcoluna-3, .fcoluna-4 {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quemsomos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 25px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+    flex-basis: 50%;
+}
+
+.quemsomos img {
     padding: 20px;
 }
 
-.hr-pagina {
+.coluna-sobre {
+    flex-basis: 50%;
+}
+
+.coluna-sobre h1 {
+  font-size: 50px;
+  margin: 25px 0;
+}
+
+.coluna-sobre p {
+    font-size: 15px;
+}
+
+#social {
+    text-align: center;
+    padding: 20px;
+}
+  
+#social a {
+    color: white;
+    font-size: 2rem;
+}
+  
+#social .fa-facebook-square {
+    color: navy;
+}
+  
+#social .fa-twitter-square {
+    color: dodgerblue;
+}
+  
+#social .fa-instagram-square {
+    color: #ff3b3b
+}
+
+hr {
     border: none;
     background-color: #ff3b3b;
     height: 2px;
@@ -163,13 +255,19 @@ ul {
     margin: 20px auto;
 }
 
-.propositos {
-    width: 940px;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+    width: 930px;
     margin: 0 auto;
-    padding: 60px;
+    margin-bottom: 30px;
+    padding: 30px;
 }
 
-.propositos li {
+.flex-container li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -181,75 +279,54 @@ ul {
     background-color: white;
 }
 
-.propositos h2 {
+.flex-container h2 {
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
-.propositos p {
+.flex-container p {
     font-size: 15px;
+    text-align: center;
+    padding: 10px;
 }
 
-.propositos li:hover {
+.flex-container li:hover {
     box-shadow: 0 10px 20px;
     color:rgb(197, 230, 211)
 }
 
-.mapas {
-    display: inline-block;
+.map-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    width: 680px;
+    width: 940px;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 70px;
     padding: 20px;
 }
 
 .mapas h1 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.duvidas {
-    display: inline-block;
-    text-align: center;
-    width: 650px;
+.formulario {
+    width: 90%;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding: 20px;
+}
+
+input, textarea, fieldset {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    font: 1em;
+    border: 1px solid;
 }
 
 .duvidas h1 {
-    font-size: 30px;
-}
-
-@media all and (min-width: 1440px) {
-    .quemsomos {
-        width: 100%;
-        margin: auto;
-    }
-    .propositos {
-        width: 100%;
-        margin: auto;
-    }
-    .mapas {
-        width: 100%;
-        margin: auto;
-    }
-    .duvidas {
-        width: 100%;
-        margin: auto;
-    }
-
-    .fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
-        width: 100%;   
-        flex-basis: 12%;
-        min-width: 250px;
-    }
-    .container {
-        width: 90%;
-        margin: auto;
-    }
+    font-size: 25px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -257,7 +334,7 @@ ul {
         width: 100%;
         margin: auto;
     }
-    .propositos {
+    .flex-container {
         width: 100%;
         margin: auto;
     }
@@ -269,11 +346,7 @@ ul {
         width: 100%;
         margin: auto;
     }
-
-    .fcoluna-1, .fcoluna-2, .fcoluna-3, .fcoluna-4 {
-        width: 100%;   
-    }
-    .container {
+    .header, .container {
         width: 90%;
         margin: auto;
     }

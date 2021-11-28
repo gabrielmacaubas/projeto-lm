@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-sobre.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/14ec9a5aca.js" crossorigin="anonymous"></script>
     <title>Sobre | LivrariaPB</title>
 </head>
 <body>
@@ -38,19 +38,34 @@
     </div>
 
 <main>
+
 <div class="quemsomos">
-    <h1>Quem somos?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore </br>
-       facere natus debitis minima, Quasi ullam nesciunt. Lorem ipsum   </br>
-       dolor sit amet consectetur adipisicing elit. Tempore facere natus</br>
-       debitis minima, Quasi ullam nesciunt. Lorem ipsum dolor sit amet </br>
-       consectetur adipisicing elit. Tempore facere natus debitis minima,</br>
-       Quasi ullam nesciunt. Lorem ipsum dolor sit amet consectetur</p>
+    <div class="coluna-sobre">
+        <h1>Quem Somos?</h1>
+        <p> Lorem ipsum dolor sit amet. Et unde sequi vel veniam iste eos </br>
+            repudiandae voluptatum qui perspiciatis ipsum et libero porro </br>
+            ad aperiam galisum. In laudantium minus sed praesentium veritatis </br>
+            et veritatis quae qui voluptas dolores qui possimus repellat sit </br>
+            dicta alias eos iusto accusantium. Lorem ipsum dolor sit amet. </br>
+            Et unde sequi vel veniam iste eos repudiandae voluptatum qui </br>
+            perspiciatis ipsum et libero porro ad aperiam galisum. In laudantium </br>
+            minus sed praesentium veritatis et veritatis quae qui voluptas dolores </br>
+            qui possimus repellat sit dicta alias eos iusto accusantium.   
+            </p>
+            <div id="social">
+                <h4>Conheça nossas redes sociais:</h4>
+                <a href="https:/www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="https:/www.twitter.com"><i class="fab fa-twitter-square"></i></a> 
+                <a href="https:/www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+              </div>
+    </div>
+    
+    <div class="coluna-sobre">
+    <img src="./images/sobre.png" alt="menina-livro">
+    </div>
 </div>
 
-<hr class="hr-pagina">
-
-<ul class="propositos">
+<ul class="flex-container">
     <li>
         <h2>Missão</h2>
         <p>Lorem ipsum dolor.</br> 
@@ -97,20 +112,33 @@
     </li>
 </ul>
 
-<hr class="hr-pagina">
+<div class="map-form">
 
-<div class="fileira">
-    <div class="mapas">
-        <h1>Nossa localização</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9173254445877!2d-34.87565898585287!3d-7.13555897196865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1sen!2sbr!4v1637936748819!5m2!1sen!2sbr" width="540" height="405" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="mapas">
+    <h1>Nossa Localização</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9173254445877!2d-34.87565898585287!3d-7.13555897196865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1sen!2sbr!4v1637936748819!5m2!1sen!2sbr" width="439" height="304" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <div class="duvidas">
-        <h1>Dúvidas? Sugestões?</h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepBkppZs_GxVY-L99TwMVYGooOVcbWfmlIRQZ1TWxBzPO0qg/viewform?embedded=true" width="540" height="405" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-    </div>
+<div class="duvidas">
+<h1>Dúvidas? Sugestões?</h1>
+    <form class="formulario">
+        
+        <fieldset>
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome">
+
+        <label for="inputEmail">Email:</label>
+        <input type="email" id="inputEmail">
+
+        <label for="inputtextareMensagem">Mensagem:</label>
+        <textarea name="textareaMensagem" id="inputNome"></textarea>
+
+        <button>Enviar</button>
+
+    </fieldset>
+    </form>
+</div>
+
 </div>
 
 </main>
-</body>
-</html>

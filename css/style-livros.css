@@ -273,11 +273,24 @@ small {
 
 
 @media only screen and (max-width: 800px) {
+  .login {
+    text-align: center;
+  }
+
+  .row-2 {
+    top: 100px;
+    padding-left: 30px;
+  }
+
+  .row-2, .header {
+    padding-left: 40px;
+  }
+
   nav ul {
     position: absolute;
-    top: 110px;
-    left: 0;
-    background: #333;
+    top: 150px;
+    right: 10px;
+    text-align: center;
     width: 100%;
     overflow: hidden;
     transition: 0.5s;
@@ -288,12 +301,14 @@ small {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  nav ul li a {
-    color: white;
-  }
+
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+
+  .small-container {
+    padding-top: 200px;
   }
 }
 
@@ -489,28 +504,7 @@ form a {
   transition: 1s;
 }
 
-
-
-.youtube-container {
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.youtube-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-#youtubevideo {
-  width: 100;
-  border: 1px solid black;
-}
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .row {
     text-align: center;
   }
